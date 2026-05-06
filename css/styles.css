@@ -210,7 +210,7 @@ h1, h2, h3, h4 {
   gap: 8px;
 }
 .logo-img {
-  height: 56px;
+  height: 88px;
   width: auto;
   display: block;
   transition: filter var(--t-mid) var(--ease);
@@ -222,7 +222,7 @@ h1, h2, h3, h4 {
 /* Footer logo always white (dark background) */
 .footer-logo .logo-img {
   filter: brightness(0) invert(1);
-  height: 48px;
+  height: 72px;
 }
 .footer-logo {
   display: inline-block;
@@ -1130,4 +1130,3 @@ h1, h2, h3, h4 {
   font-size: clamp(28px, 3.5vw, 36px);
   margin-bottom: var(--space-md);
 }
-
