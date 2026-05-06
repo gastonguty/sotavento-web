@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Sotavento Living</title>
+  <meta name="description" content="Escribinos por WhatsApp, llamanos o completá el form. Te respondemos en horas hábiles." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Sotavento Living" class="logo-img" /></a>
+      <nav class="main-nav">
+        <ul>
+          <li class="has-submenu"><a href="index.html#colecciones">Colecciones</a>
+            <ul class="submenu">
+              <li><span class="submenu-label">Sotavento Living</span></li>
+              <li><a href="colecciones/mediterraneo.html">Mediterráneo</a></li>
+              <li><a href="colecciones/indico.html">Índico</a></li>
+              <li><a href="colecciones/atlantico.html">Atlántico</a></li>
+              <li><a href="colecciones/pacifico.html">Pacífico</a></li>
+              <li class="divider"></li>
+              <li><span class="submenu-label">Sotavento Urban</span></li>
+              <li><a href="colecciones/baltico.html">Báltico</a></li>
+              <li><a href="colecciones/egeo.html">Egeo</a></li>
+            </ul>
+          </li>
+          <li><a href="materiales.html">Materiales</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="showroom.html">Showroom</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/541149715679" class="header-cta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.95.51 3.86 1.49 5.54L2.05 22l4.71-1.24a9.94 9.94 0 0 0 5.28 1.51h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 18.97 5C17.1 3.13 14.66 2 12.04 2z"/></svg><span>WhatsApp</span></a>
+      <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Contacto</p>
+      <h1>Charlemos.</h1>
+      <p class="page-hero-subtitle">La forma más rápida es WhatsApp. Si preferís el form, también te respondemos en horas hábiles.</p>
+    </div>
+  </section>
+
+  <section class="material-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="reveal">
+          <h2>Escribinos directo</h2>
+          <p style="margin-bottom:24px;">El equipo de Sotavento atiende WhatsApp en horario comercial. Tu mensaje lo lee una persona, no un bot — y te responde con la información que necesitás.</p>
+
+          <div class="contact-direct">
+            <div>
+              <p class="cormorant">WhatsApp</p>
+              <a href="https://wa.me/541149715679" target="_blank" rel="noopener" class="contact-link">11 4971-5679</a>
+            </div>
+            <div>
+              <p class="cormorant">Email</p>
+              <a href="mailto:hola@sotaventoliving.com.ar" class="contact-link">hola@sotaventoliving.com.ar</a>
+            </div>
+            <div>
+              <p class="cormorant">Showroom</p>
+              <p>Av. Benavidez 3750<br>Nordelta, Tigre</p>
+              <p style="font-size:14px; opacity:0.7;">Lun a Vie 10-16 hs<br>Sábados, domingos y feriados con cita previa</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h2>O completá el formulario</h2>
+          <form class="contact-form" action="#" method="post" novalidate>
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" />
+            </div>
+            <div>
+              <label for="linea">Consulto sobre</label>
+              <select id="linea" name="linea">
+                <option value="general">Información general</option>
+                <option value="mediterraneo">Línea Mediterráneo</option>
+                <option value="indico">Línea Índico</option>
+                <option value="atlantico">Línea Atlántico</option>
+                <option value="pacifico">Línea Pacífico</option>
+                <option value="urban">Sotavento Urban (Báltico / Egeo)</option>
+                <option value="proyecto">Proyecto custom</option>
+              </select>
+            </div>
+            <div class="full">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Contanos qué estás buscando..."></textarea>
+            </div>
+            <div class="full">
+              <button type="submit" class="btn btn-primary">Enviar consulta</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps?q=Av+Benavidez+3750+Nordelta+Tigre&output=embed" width="100%" height="450" style="border:0;display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Showroom Sotavento Living"></iframe>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo"><img src="images/logo.png" alt="Sotavento Living" class="logo-img" /></a>
+        <p class="footer-tagline">Mobiliario outdoor premium argentino</p>
+        <div class="footer-social"><a href="https://instagram.com/sotaventoliving" target="_blank">IG</a><a href="#" target="_blank">FB</a><a href="https://wa.me/541149715679" target="_blank">WA</a></div>
+      </div>
+      <div class="footer-col">
+        <h4>Sotavento Living</h4>
+        <ul><li><a href="colecciones/mediterraneo.html">Mediterráneo</a></li><li><a href="colecciones/indico.html">Índico</a></li><li><a href="colecciones/atlantico.html">Atlántico</a></li><li><a href="colecciones/pacifico.html">Pacífico</a></li></ul>
+        <h4 style="margin-top:24px;">Sotavento Urban</h4>
+        <ul><li><a href="colecciones/baltico.html">Báltico</a></li><li><a href="colecciones/egeo.html">Egeo</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sitio</h4>
+        <ul><li><a href="materiales.html">Materiales</a></li><li><a href="proyectos.html">Proyectos</a></li><li><a href="showroom.html">Showroom</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="catalogo.html">Catálogo</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>Av. Benavidez 3750<br>Nordelta, Tigre</p>
+        <p>WhatsApp: <a href="https://wa.me/541149715679">11 4971-5679</a></p>
+        <p><a href="mailto:hola@sotaventoliving.com.ar">hola@sotaventoliving.com.ar</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Sotavento Living · Industria nacional · Diseño Argentino</p></div>
+  </footer>
+
+  <a href="https://wa.me/541149715679" class="floating-wa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.95.51 3.86 1.49 5.54L2.05 22l4.71-1.24a9.94 9.94 0 0 0 5.28 1.51h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 18.97 5C17.1 3.13 14.66 2 12.04 2z"/></svg></a>
+  <script src="js/main.js"></script>
+</body>
+</html>
