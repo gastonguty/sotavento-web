@@ -356,20 +356,26 @@ h1, h2, h3, h4 {
   background: rgba(244, 243, 239, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  padding: var(--space-lg);
-  max-width: 580px;
+  padding: var(--space-md);
+  max-width: 440px;
   border-radius: 4px;
 }
+@media (min-width: 768px) {
+  .hero-card {
+    margin-left: auto;
+  }
+}
 .hero-title {
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: clamp(32px, 4.4vw, 56px);
   font-weight: 500;
   margin-bottom: var(--space-sm);
+  line-height: 1.05;
 }
 .hero-subtitle {
-  font-size: clamp(16px, 1.4vw, 18px);
+  font-size: clamp(15px, 1.2vw, 17px);
   color: rgba(31, 31, 31, 0.85);
   margin-bottom: var(--space-md);
-  max-width: 460px;
+  max-width: 380px;
 }
 .hero-ctas {
   display: flex;
