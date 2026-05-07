@@ -940,6 +940,14 @@ h1, h2, h3, h4 {
   font-family: var(--font-quote);
   letter-spacing: 0.05em;
 }
+.swatch-code {
+  display: inline-block;
+  margin-top: 2px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: rgba(31, 31, 31, 0.4);
+}
 
 /* Warranty (materiales) */
 .warranty {
