@@ -1200,3 +1200,27 @@ h1, h2, h3, h4 {
   font-size: 13px;
 }
 
+/* ===================== GALERÍA POR LÍNEA ===================== */
+.linea-galeria {
+  padding: var(--space-2xl) 0;
+  background: var(--color-beige-light);
+}
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) { .galeria-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
+.galeria-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  background: var(--color-beige-mid);
+  transition: transform var(--t-mid) var(--ease);
+}
+.galeria-grid img:hover { transform: scale(1.02); }
+
