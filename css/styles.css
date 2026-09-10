@@ -985,8 +985,10 @@ h1, h2, h3, h4 {
 .cta-band p { opacity: 0.85; max-width: 600px; margin: 0 auto; }
 .cta-band .btn { margin: 6px 4px; }
 .cta-band .btn-primary { background: var(--color-brown); border-color: var(--color-brown); color: var(--color-bg); }
-.cta-band .btn-secondary { color: var(--color-bg); border-color: var(--color-bg); }
-.cta-band .btn-secondary:hover { background: var(--color-bg); color: var(--color-fg); }
+.cta-band .btn-secondary,
+.catalogo-cta .btn-secondary { color: var(--color-bg); border-color: var(--color-bg); }
+.cta-band .btn-secondary:hover,
+.catalogo-cta .btn-secondary:hover { background: var(--color-bg); color: var(--color-fg); }
 
 /* Showroom info grid */
 .showroom-info-section {

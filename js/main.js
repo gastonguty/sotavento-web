@@ -49,16 +49,6 @@
     reveals.forEach(el => el.classList.add('is-visible'));
   }
 
-  /* ----- Catalog form (placeholder until backend is wired) ----- */
-  const form = document.querySelector('.catalogo-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const email = form.querySelector('input[type="email"]').value;
-      if (!email) return;
-      // TODO: integrate with email provider (Resend, Mailchimp, Webflow forms, or simple endpoint)
-      alert('¡Gracias! Te enviaremos el catálogo a ' + email + '. (placeholder — falta conectar el backend del form)');
-      form.reset();
-    });
-  }
+  /* El catálogo ahora se descarga directo (link al PDF) + CTA de WhatsApp:
+     ya no hay form que interceptar. */
 })();
