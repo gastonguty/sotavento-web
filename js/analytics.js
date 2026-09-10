@@ -13,7 +13,7 @@
 (function () {
   'use strict';
 
-  var GA4_ID = '';                        // ej: 'G-XXXXXXXXXX'  — PENDIENTE
+  var GA4_ID = 'G-X0LJ3583Z3';            // Propiedad "sotaventoliving.com.ar", flujo "Sitio Web"
   var META_PIXEL_ID = '631696506253371';  // "Pixel de Sotavento" — el mismo dataset que usa
                                           // jarvis/capi.py para mandar las ventas de WhatsApp,
                                           // así Meta deduplica web + CAPI.
