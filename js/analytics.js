@@ -13,8 +13,10 @@
 (function () {
   'use strict';
 
-  var GA4_ID = '';         // ej: 'G-XXXXXXXXXX'
-  var META_PIXEL_ID = '';  // ej: '123456789012345'
+  var GA4_ID = '';                        // ej: 'G-XXXXXXXXXX'  — PENDIENTE
+  var META_PIXEL_ID = '631696506253371';  // "Pixel de Sotavento" — el mismo dataset que usa
+                                          // jarvis/capi.py para mandar las ventas de WhatsApp,
+                                          // así Meta deduplica web + CAPI.
 
   /* ---------- Google Analytics 4 ---------- */
   if (GA4_ID) {
