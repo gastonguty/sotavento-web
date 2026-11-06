@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/:loc(pergamino1|pergamino2|neuquen1|neuquen2)", "destination": "/:loc/", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/:loc(pergamino1|pergamino2|neuquen1|neuquen2)/", "destination": "https://sotavento-locales.vercel.app/:loc/" },
+    { "source": "/:loc(pergamino1|pergamino2|neuquen1|neuquen2)/:path*", "destination": "https://sotavento-locales.vercel.app/:loc/:path*" }
+  ]
+}
