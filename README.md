@@ -23,8 +23,8 @@ Conviene subirlas livianas: **formato webp, menos de 300 KB**. En la página se 
 
 ### Para que nada se rompa
 
-- No borren la línea `<script src="/js/analytics.js" defer></script>` de las páginas: mide las visitas y los
-  contactos para las campañas (Google y Meta).
+- No borren la línea que carga `analytics.js` (un `<script ... analytics.js defer></script>`) de ninguna página: mide
+  las visitas y los contactos para las campañas (Google y Meta).
 - No toquen `vercel.json` ni la carpeta `.github/`: es lo que publica la web y lo que muestra las páginas de
   los locales (`/pergamino1`, `/neuquen1`, etc., que viven en otro repositorio).
 - El WhatsApp de Sotavento es `5491149715679` (así, con el 9 después del 54).
