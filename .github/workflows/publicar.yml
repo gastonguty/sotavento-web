@@ -1,0 +1,18 @@
+# Cada vez que alguien guarda un cambio en main, le avisa a Vercel que publique.
+# Va por un "deploy hook" (y no solo por la integración de Git) para que también
+# publiquen los cambios que hacen colaboradores que no son dueños de la cuenta de Vercel.
+name: Publicar
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Avisar a Vercel
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "Todavía no está configurado el aviso a Vercel (lo carga Sotavento)."; exit 0; fi
+          curl -fsS -X POST "$HOOK" > /dev/null && echo "Publicación pedida a Vercel: en 1-2 minutos está en línea."

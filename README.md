@@ -1,5 +1,39 @@
 # Sotavento Living — Sitio web
 
+## Para quien edita la web (agencia y equipo)
+
+**Todo lo que se guarda en este repositorio se publica solo en sotaventoliving.com.ar, en uno o dos minutos.**
+No hace falta pedirle nada a nadie.
+
+### Cambiar un texto o una página (sin instalar nada)
+
+1. Entrá a este repositorio en github.com con tu usuario.
+2. Abrí la página que querés cambiar: `index.html` es el inicio; `colecciones/` tiene una página por línea;
+   `contacto.html`, `showroom.html`, `nosotros.html`, etc. son las demás.
+3. Tocá el **lápiz** (arriba a la derecha), hacé el cambio y apretá **Commit changes**.
+4. Esperá un par de minutos y recargá la web.
+
+Si trabajan con Claude, pueden pasarle el archivo, pedirle el cambio y pegar el resultado.
+
+### Subir fotos
+
+Entrá a la carpeta `images/` (o la subcarpeta que corresponda) → **Add file → Upload files**.
+Conviene subirlas livianas: **formato webp, menos de 300 KB**. En la página se usan con su ruta, por ejemplo
+`images/espacios/quincho.webp`.
+
+### Para que nada se rompa
+
+- No borren la línea `<script src="/js/analytics.js" defer></script>` de las páginas: mide las visitas y los
+  contactos para las campañas (Google y Meta).
+- No toquen `vercel.json` ni la carpeta `.github/`: es lo que publica la web y lo que muestra las páginas de
+  los locales (`/pergamino1`, `/neuquen1`, etc., que viven en otro repositorio).
+- El WhatsApp de Sotavento es `5491149715679` (así, con el 9 después del 54).
+- Si algo sale mal, se puede volver atrás: cada cambio queda guardado en la historia del repositorio.
+
+---
+
+## Notas técnicas
+
 Sitio estático con HTML + CSS + JS puro. Sin frameworks, sin build step, sin dependencias. Listo para subir a cualquier hosting.
 
 ## Estructura del proyecto
