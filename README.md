@@ -73,7 +73,7 @@ sotavento-web/
 | `col-pacifico.jpg` | Hero card de la línea Pacífico | 1200×1500px |
 | `lifestyle-mujer-cafe.jpg` | Mujer con sweater beige tomando café (sesión Abril) | 1200×1500px |
 | `proyecto-1.jpg`, `proyecto-2.jpg`, `proyecto-3.jpg` | 3 proyectos destacados | 1200×900px |
-| `materiales-detalle.jpg` | Detalle del aluminio termolaqueado + lona acrílica | 1200×1200px |
+| `materiales-detalle.jpg` | Detalle del aluminio termolaqueado + tela naútica | 1200×1200px |
 | `showroom.jpg` | Foto exterior o interior del showroom Nordelta | 1600×1200px |
 
 **Mientras no agregues fotos**: el sitio se ve con los colores beige/marrón de la paleta del manual. Funciona como wireframe visual hasta que cargues las imágenes reales.
